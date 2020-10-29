@@ -1,3 +1,46 @@
 #body-style{
     background: skyblue;
 }
+
+
+.input-error{
+    
+}
+
+.form-terms{
+    color: blue;
+    font-size: medium;
+}
+
+
+.form-btn{
+    color: #fff;
+    background: blue;
+    text-transform: initial;
+}
+
+.form-footer{
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
+    text-underline-position: below;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-white{
+    color: #fff;
+}
+
+.loader{
+    position: absolute;
+    top: 0px;
+    width: 100vh;
+    height: 100vh;
+    background: #ccc;
+}

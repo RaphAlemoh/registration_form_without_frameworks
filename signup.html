@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h3>Go back home <a href="index.html" class="link"></a></h3>
+
+    <div class="form-wrapper">
+        <h3><b>Sign Up</b></h3>
+        <p>Please fill in the form to create an account</p>
+    <form name="signUpForm" id="signup-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" name="first_name" id="first-name" placeholder="First Name">
+                    <span id="first-name-error" style="color: red;" class="input-error"> </span>   
+                </div>
+                <div class="col-6">
+                    <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                    <span id="last-name-error" style="color: red;" class="input-error"> </span>   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <span id="email-error" style="color: red;" class="input-error"> </span>   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="password" name="pword" id="pword" placeholder="Password">
+                    <span id="password-error" style="color: red;" class="input-error"> </span>   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="password" name="cword" id="cword" placeholder="Confirm Password">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="checkbox" name="accept" id="accept">
+                    I accept the <span class="form-terms">Terms of Use & Privacy Policy</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="form-btn" disabled id="sign-up">Sign Up</button>
+                    <span id="loader" style="display: none;" class="loader">
+                        <img src="ajax-loader.gif" alt="loading" width="20px" height="20px" class="img-fluid">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>        
+
+    <div class="form-footer">
+        <div class="text-center text-white">
+            <h4>Already have an account? <span class="underline">Login here</span></h4>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
