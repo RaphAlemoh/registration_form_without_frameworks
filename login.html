@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script src="https://use.fontawesome.com/4ecc3dbb0b.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
-<body id="body-style">
-
+<body>
+    <div class="body-bg-img"></div>
     <div class="form-wrapper">
-        <h3><b>Login</b></h3>
-        <p>Please login to continue</p>
+        <h3>Go back <a href="index.html" class="link">home</a></h3>
 
+
+
+        <div class="form-container">
+            <div class="title-container">
+                <h3><b>Login</b></h3>
+                <p>Please login to continue</p>
+            </div>
         <form action="" id="login-form">
             <div class="container">
     
                 <div class="row">
                     <div class="col-12">
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email-login" placeholder="Email" onkeyup="validateLogin()" >
                     </div>
                 </div>
     
                 <div class="row">
                     <div class="col-12">
-                        <input type="password" name="pword" id="pword" placeholder="Password">
+                        <input type="password" name="pword" id="pword-login" placeholder="Password" onkeyup="validateLogin()">
                     </div>
                 </div>
     
     
-                <div class="row">
+                <div class="row clearfix">
                     <div class="col-6">
-                        <button type="submit" class="form-btn" disabled id="login">Login</button>
+                        <img id="loader" style="display: none;" class="loader" src="ajax-loader.gif" alt="loading" width="20px" height="20px" >
+                        <input type="submit" value="Login"  id="login" disabled>
                     </div>
                 </div>
             </div>
         </form>        
+        
     
+        <div class="row clearfix">
+            <div class="col-12">
         <div class="form-footer">
-            <div class="text-center text-white">
-                <h4>Don't have an account? Please signup <span class="underline">here </span></h4>
+            <div class="text-center">
+                <h5>Don't have an account? <span class="underline"><a href="/signup.html">here</a></span></h5>
             </div>
+        </div>                  
+            </div>
+          
         </div>
 
+
     </div>
+</div>
     
 </body>
 <script src="main.js"></script>
